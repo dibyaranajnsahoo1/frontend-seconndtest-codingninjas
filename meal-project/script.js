@@ -1,11 +1,15 @@
 // <!-- Name :- DIBYA RANJAN SAHOO
 // EMAIL :-ranjandibya34512@gmail.com -->
+
+
+// it makes a array if it does not exist in local storage
+// this array will be used to store favorite lists
 if (localStorage.getItem("favouritesList") == null) {
     localStorage.setItem("favouritesList", JSON.stringify([]));
 }
 
 
-
+// its fetch meals from the api and returns it
 async function fetchMealsFromApi(url,value) {
     let response=await fetch(`${url+value}`);
     let meal=await response.json();
@@ -14,6 +18,9 @@ async function fetchMealsFromApi(url,value) {
 
 
 
+// its show's all meals card in main acording to search input value
+//this function is called from index.html evertime the 'keyup' event happens
+//thats how we get updated results for every key press
 function showListOfMeals(){
     let inputValue = document.getElementById("my-search").value;
     let arr=JSON.parse(localStorage.getItem("favouritesList"));
@@ -29,7 +36,7 @@ function showListOfMeals(){
                         isFav=true;
                     }
                 }
-               
+                //if meal is not in the favorite list this will be card below will be code for that
                 if (isFav!=true) {
                     html += `
                     <div id="card" class="card mb-3" style="width: 20rem; ">
@@ -44,7 +51,7 @@ function showListOfMeals(){
                         </div>
                     </div>  
                     `;
-          
+           //else ,if it's in favorite list then below will be code for that 
                 } else {
                      html += `
                 <div id="card" class="card card-1 mb-3 " style="width: 20rem; background: linear-gradient(135deg, green, rgba(255, 255, 255, 0));">
@@ -64,8 +71,10 @@ function showListOfMeals(){
                 
             });
 
-
+  //This will be code if the searched input is not found in mealDB Api
+            //and below image will be displayed
         } else {
+           
            
             html += `
             <div class="page-wrap d-flex flex-row align-items-center">
@@ -87,6 +96,7 @@ function showListOfMeals(){
 
 
 
+//shows full meal details after clicking on details button
 async function showMealDetails(id) {
     let url="https://www.themealdb.com/api/json/v1/1/lookup.php?i=";
     let html="";
@@ -122,6 +132,8 @@ async function showMealDetails(id) {
 
 
 
+
+// its shows all favourites meals in favourites body
 async function showFavMealList() {
     let arr=JSON.parse(localStorage.getItem("favouritesList"));
     let url="https://www.themealdb.com/api/json/v1/1/lookup.php?i=";

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
-
+/* removing the padding and margin from all the elemeents using this wild card */
 * {
     padding: 0;
     margin: 0;
@@ -10,6 +10,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* setting text and background color for the body */
 body {
     
     width: 100%;
@@ -19,10 +20,11 @@ body {
     background: rgba(0, 0, 0, 0.334);
 
 }
+
 #fats{
     font-size:33px;
 }
-
+/* setting wave svg(Scalable Vector Graphics) for whole body  */
 #full-body{
     width: 100vw;
     height: 100%;
@@ -87,6 +89,7 @@ body {
     margin: auto;
     text-align: center;
 }
+/* favourites offcanvus  */
 #favourites-body{
     background-color:#212529 ;
 }
