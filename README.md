@@ -7,4 +7,15 @@ It Stores Your Favorite List of Meal in Local Storage so even if you close the t
 <h1>DEMO</h1>
 <hr>
 https://resilient-brigadeiros-64409d.netlify.app
-<img src="https://drive.google.com/file/d/11FJSiH4G0rVB2YAYkCZOzxgaZchjZ9mP/view?usp=share_link">
+<img src="https://github.com/dibyaranajnsahoo1/frontend-seconndtest-codingninjas/blob/main/Screenshot%20(1071).png">
+<hr>
+<img src="https://github.com/dibyaranajnsahoo1/frontend-seconndtest-codingninjas/blob/main/Screenshot%20(1072).png">
+<hr>
+<img src="https://github.com/dibyaranajnsahoo1/frontend-seconndtest-codingninjas/blob/main/Screenshot%20(1073).png">
+<hr>
+<img src="https://github.com/dibyaranajnsahoo1/frontend-seconndtest-codingninjas/blob/main/Screenshot%20(1074).png">
+<hr>
+<img src="https://github.com/dibyaranajnsahoo1/frontend-seconndtest-codingninjas/blob/main/Screenshot%20(1075).png">
+<hr>
+<img src="https://github.com/dibyaranajnsahoo1/frontend-seconndtest-codingninjas/blob/main/Screenshot%20(1076).png">
+<hr>
